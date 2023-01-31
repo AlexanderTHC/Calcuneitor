@@ -1,7 +1,10 @@
 /* CREDITOS BY SAJ THC */
-function callCreditos() {
-    $("#modalCreditos").modal("show");
-}
+$(document).ready(function () {
+    $("#callCreditos").click(function () {
+        $("#modalCreditos").modal("show");
+    });
+});
+
 
 // CALCULO DE IMPUESTOS
 let valorDolar = 194;
