@@ -1,0 +1,57 @@
+/* Sticky Footer Classes */
+
+html,
+body {
+  min-height: 100%;
+}
+
+
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+/* Other Classes for Page Styling */
+
+body {
+  background: #007bff;
+  background: linear-gradient(to bottom, #ffffff, #5a5a5a);
+}
+
+
+.icoFB {
+    text-decoration: none !important;
+    color: #0077BC;
+    border: 0px solid #000000;
+  }.icoFB:hover {
+    color: #036198;
+    text-decoration: none !important;
+    text-shadow: 0 0 3px #0082ce;
+  }
+  .icoMail { 
+    text-decoration: none !important;
+    color: #d93526;
+    border: 0px solid #000000;
+  }.icoMail:hover {
+    color: #b02b1f;
+    text-decoration: none !important;
+    text-shadow: 0 0 3px #ef3b2a;
+  }
+  .icoIG {
+    text-decoration: none !important;
+    border: 0px solid #000000;
+    color: rgba(131,58,180,1);
+  }.icoIG:hover {
+    color: rgb(107, 48, 147);
+    text-decoration: none !important;
+    text-shadow: 0 0 3px rgb(175, 34, 223);
+  }
+  .icoWP {
+    text-decoration: none !important;
+    border: 0px solid #000000;
+    color: #1BD741;
+  }.icoWP:hover {
+    color: #14992f;
+    text-decoration: none !important;
+    text-shadow: 0 0 3px #00ff33; 
+  }
