@@ -18,74 +18,154 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <div class="container">
-            <img src="img/favicon.png" alt="calcuneitor" width="65" height="50"
-                class="d-inline-block align-text-top ps-2">
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav me-auto mt-2 mt-lg-0 ps-4">
-                    <li class="nav-item">
-                        <!--PARA LOCAL
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container">
+                <img src="img/favicon.png" alt="calcuneitor" width="65" height="50"
+                    class="d-inline-block align-text-top ps-2">
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0 ps-4">
+                        <li class="nav-item">
+                            <!--PARA LOCAL
                         <a class="nav-link active" href="Calcuneitor/" aria-current="page">Inicio <span
                                 class="visually-hidden">(current)</span></a>
                         -->
-                        <!--PARA GITHUB-->
-                        <a class="nav-link active" href="Calcuneitor/" aria-current="page">Inicio <span
-                                class="visually-hidden">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Otras calculadoras
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="impTarjeta.html"
-                                    onclick="swal.fire('Info','Actualmente en Desarrollo','info')">Calculadora Impuesto
-                                    Tarjeta</a></li>
-                            <li><a class="dropdown-item" href="/blueToArs.html"
-                                    onclick="swal.fire('Info','Actualmente en Desarrollo','info')">Calculadora Dolar
-                                    Blue</a></li>
-                            <li><a class="dropdown-item" href="impSteam.html"
-                                    onclick="swal.fire('Info','Actualmente en Desarrollo','info')">Calculadora Steam</a>
-                            </li>
-                            <li><a class="dropdown-item" href="impMp.html"
-                                    onclick="swal.fire('Info','Actualmente en Desarrollo','info')">Calculadora Mercado
-                                    Pago</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="realesToArs.html"
-                                    onclick="swal.fire('Info','Actualmente en Desarrollo','info')">Calculadora Reales a
-                                    Peso Argentino</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                            <!--PARA GITHUB-->
+                            <a class="nav-link active" href="/" aria-current="page">Inicio <span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Otras calculadoras
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="impTarjeta.html"
+                                        onclick="swal.fire('Info','Actualmente en Desarrollo','info')">Calculadora
+                                        Impuesto
+                                        Tarjeta</a></li>
+                                <li><a class="dropdown-item" href="/blueToArs.html"
+                                        onclick="swal.fire('Info','Actualmente en Desarrollo','info')">Calculadora Dolar
+                                        Blue</a></li>
+                                <li><a class="dropdown-item" href="#"
+                                        onclick="swal.fire('Info','Actualmente en Desarrollo','info')">Calculadora
+                                        Steam</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#"
+                                        onclick="swal.fire('Info','Actualmente en Desarrollo','info')">Calculadora
+                                        Mercado
+                                        Pago</a></li>
+                                <li>
+                                <li><a class="dropdown-item" href="/realesToArs.html">Calculadora
+                                        Reales a
+                                        Peso Argentino</a></li>
+                                <li><a class="dropdown-item" href="#"
+                                        onclick="swal.fire('Info','Actualmente en Desarrollo','info')">Calculadora Euro
+                                        a
+                                        Peso Argentino</a></li>
+                            </ul>
+                        </li>
+                    </ul>
 
-                <ul class="navbar-nav me-auto mt-2 mt-lg-0 ps-4">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0 ps-4">
 
-                </ul>
-                <form class="d-flex my-2 my-lg-0">
-                    <a href="#" class="btn btn-outline-info my-2 my-sm-0" id="callCreditos"><i
-                            class="fa-solid fa-circle-info"></i></a>
-                </form>
+                    </ul>
+                    <form class="d-flex my-2 my-lg-0">
+                        <a href="#" class="btn btn-outline-info my-2 my-sm-0" id="callCreditos"><i
+                                class="fa-solid fa-circle-info"></i></a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="contenidoPage">
+        <div class="container">
+            <div class="row pt-5 pb-5">
+                <h1>Calculadora de Reales a Peso Argentino</h1>
+                <h3>Reales <b class="text-primary">(R$)</b> a Peso Argentino <b class="text-success">(AR$)</b></h3>
+                <hr class="mt-3">
+                <div class="compra_venta">
+                    <div class="cotizacion">
+                        <div class="card text-center ">
+                            <div class="card-body">
+                                <h5 class="card-title">COMPRA</h5>
+                                <h6 class="precio" id="precioCompraReal">$0.00</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cotizacion">
+                        <div class="card text-center ">
+                            <div class="card-body">
+                                <h5 class="card-title">VENTA</h5>
+                                <h6 class="precio" id="precioVentaReal">$0.00</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dolar-blue-peso">
+                    <div class="card border border-success-subtle shadow-lg">
+                        <div class="card-body">
+                            <div class="text-center mb-4 tituloConversor">
+                                <h2>CONVERSOR</h2>
+                            </div>
+                            <hr>
+                            <div class="compra_venta_converse">
+                                <div>
+                                    <span class="subtituloConversor">Convertir a</span>
+                                    <h5 class="card-title tituloCardTHC">Dolar (U$D) <i
+                                            class="fa-solid fa-arrow-right arrowTHC"></i> Peso Argentino (AR$)</h5>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><img src="img/eeuu.png" width="25" height="25"
+                                                alt="eeuu"></span>
+                                        <input type="number" class="form-control convertirInput" value="0" min="0"
+                                            id="inputDolar" name="inputDolar" onchange="calcularBlueBToArs()">
+                                    </div>
+                                    <div class="mt-3">
+                                        <h5>Resultado:</h5>
+                                        <p id="pesoArgTotal" name="pesoArgTotal">AR$: $0.00</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="subtituloConversor">Convertir a</span>
+                                    <h5 class="card-title tituloCardTHC">Peso Argentino (AR$) <i
+                                            class="fa-solid fa-arrow-right arrowTHC"></i> Dolar (U$D)</h5>
+                                    <div class="input-group w-auto">
+                                        <span class="input-group-text"><img src="img/argentinaFlag.png" width="25"
+                                                height="25" alt="argentina"></span>
+                                        <input type="number" class="form-control convertirInput" value="0" min="0"
+                                            id="inputArs" name="InputArs" onchange="calcularArsToUsdB()">
+                                    </div>
+                                    <div class="mt-3">
+                                        <h5>Resultado:</h5>
+                                        <p id="dolarBlueTotal" name="dolarBlueTotal">U$D: $0.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <h2>FAQ</h2>
+                    <hr>
+                    <h5>Acerca de la Pagina</h5>
+                    <p>Actualmente esta pagina se encuentra en desarrollo, por lo que puede presentar fallas en el
+                        Sistema,
+                        agradecemos su paciencia, aun nos encontramos en construcción de esta pagina web.</p>
+                    <div class="text-center">
+                        <img src="img/constructor.PNG" alt="constructor">
+                    </div>
+                </div>
+
             </div>
         </div>
-    </nav>
-
-    <!--CONTENIDO DE LA PAGINA -->
-    <div class="container">
-        <div class="row pt-5 pb-5">
-            <h1>Plantilla</h1>
-
-        </div>
     </div>
-
     <!-- MODAL CREDITOS -->
     <!-- Modal -->
     <div class="modal fade" id="modalCreditos" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"

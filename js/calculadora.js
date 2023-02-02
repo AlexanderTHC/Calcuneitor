@@ -13,6 +13,7 @@ let inputDolar;
 let inputArs;
 let inputReales;
 let inputEuro;
+let pesoArgTotal = 0;
 
 /* SISTEMA DE CALCULO DE IMPUESTOS DE TARJETAS */
 function calcular() {
@@ -59,7 +60,7 @@ let cotizacionBlueV = 381;
 document.getElementById("precioCompraBlue").innerHTML = '$' + cotizacionBlueC.toFixed(2);
 document.getElementById("precioVentaBlue").innerHTML = '$' + cotizacionBlueV.toFixed(2);
 
-let pesoArgTotal = 0;
+
 let dolarBlueTotal = 0;
 function calcularBlueBToArs() {
     inputDolar = $("#inputDolar").val();
@@ -75,3 +76,55 @@ function calcularArsToUsdB(){
 
     document.getElementById("dolarBlueTotal").innerHTML = 'U$D: $' + dolarBlueTotal.toFixed(2);
 }
+
+/* SISTEMA DE CONVERSOR DE REALES - By THC */
+/* BLUE -> ARS */
+let cotizacionRealC = 37.04;
+let cotizacionRealV = 37.05;
+document.getElementById("precioCompraReal").innerHTML = 'R$' + cotizacionRealC.toFixed(2);
+document.getElementById("precioVentaReal").innerHTML = 'R$' + cotizacionRealV.toFixed(2);
+
+let dolarRealTotal = 0;
+function calcularBlueBToArs() {
+    inputReal = $("#inputReal").val();
+
+    let pesoArgTotal = inputReal * cotizacionRealC;
+
+    document.getElementById("pesoArgTotal").innerHTML = 'AR$: $' + pesoArgTotal.toFixed(2);
+}
+/* ARS -> BLUE */
+function calcularArsToUsdB(){
+    inputArs = $("#inputArs").val();
+    let dolarRealTotal = inputArs / cotizacionRealV;
+
+    document.getElementById("realTotal").innerHTML = 'R$: $' + dolarRealTotal.toFixed(2);
+}
+
+
+/* SISTEMA DE CONVERSOR DE REALES - By THC
+/* BLUE -> ARS 
+$206,23
+$206,33
+let cotizacionRealC = 37.04;
+let cotizacionRealV = 37.05;
+document.getElementById("precioCompraReal").innerHTML = 'R$' + cotizacionBlueC.toFixed(2);
+document.getElementById("precioVentaReal").innerHTML = 'R$' + cotizacionBlueV.toFixed(2);
+
+
+let dolarRealTotal = 0;
+function calcularBlueBToArs() {
+    inputReal = $("#inputReal").val();
+
+    let pesoArgTotal = inputReal * cotizacionRealC;
+
+    document.getElementById("pesoArgTotal").innerHTML = 'AR$: $' + pesoArgTotal.toFixed(2);
+}
+/* ARS -> BLUE 
+function calcularArsToUsdB(){
+    inputArs = $("#inputArs").val();
+    let dolarRealTotal = inputArs / cotizacionRealV;
+
+    document.getElementById("realTotal").innerHTML = 'R$: $' + dolarRealTotal.toFixed(2);
+}
+*/
+
