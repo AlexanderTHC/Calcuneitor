@@ -8,19 +8,23 @@ $(document).ready(function () {
     });
 });
 
+/* VARIABLES GLOBALES */
+let inputDolar;
+let inputArs;
+let inputReales;
+let inputEuro;
 
-// CALCULO DE IMPUESTOS
-let valorDolar = 194;
-let usdToArs;
-let totalImpPs;
-let totalImpGan;
-let impPais;
-let impGan;
-
-let impuestoPais = 30 / 100;
-let impuestoGanancia = 45 / 100;
-
+/* SISTEMA DE CALCULO DE IMPUESTOS DE TARJETAS */
 function calcular() {
+    let valorDolar = 194;
+    let usdToArs;
+    let totalImpPs;
+    let totalImpGan;
+    let impPais;
+    let impGan;
+
+    let impuestoPais = 30 / 100;
+    let impuestoGanancia = 45 / 100;
     let numInput = $("#numInput").val();
 
 
@@ -45,4 +49,29 @@ function calcular() {
 
     document.getElementById("total").innerHTML = '$' + total.toFixed(2);
 
+}
+
+
+/* SISTEMA DE CONVERSOR DOLAR BLUE - By THC */
+/* BLUE -> ARS */
+let cotizacionBlueC = 377;
+let cotizacionBlueV = 381;
+document.getElementById("precioCompraBlue").innerHTML = '$' + cotizacionBlueC.toFixed(2);
+document.getElementById("precioVentaBlue").innerHTML = '$' + cotizacionBlueV.toFixed(2);
+
+let pesoArgTotal = 0;
+let dolarBlueTotal = 0;
+function calcularBlueBToArs() {
+    inputDolar = $("#inputDolar").val();
+
+    let pesoArgTotal = inputDolar * cotizacionBlueC;
+
+    document.getElementById("pesoArgTotal").innerHTML = 'AR$: $' + pesoArgTotal.toFixed(2);
+}
+/* ARS -> BLUE */
+function calcularArsToUsdB(){
+    inputArs = $("#inputArs").val();
+    let dolarBlueTotal = inputArs / cotizacionBlueC;
+
+    document.getElementById("dolarBlueTotal").innerHTML = 'U$D: $' + dolarBlueTotal.toFixed(2);
 }

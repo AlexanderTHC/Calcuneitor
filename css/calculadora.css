@@ -14,10 +14,22 @@ body {
 /* Other Classes for Page Styling */
 
 body {
-  background: #007bff;
-  background: linear-gradient(to bottom, #ffffff, #5a5a5a);
+  background-color: #d8d8d8 !important;
+  /* background: linear-gradient(to bottom, #ffffff, #5a5a5a); */
 }
 
+header {
+  width: 100%;
+}
+/*? CON ESTO SE PUEDE ARREGLAR PARA QUE SEA COMPATIBLE CON DEMAS DISPOSITIVOS  ANDROID.*/
+.contenidoPage{
+  display: table;
+  margin: 0;
+  padding: 0;
+  position: static;
+  width: 100%;
+  text-align: left;
+}
 
 .icoFB {
     text-decoration: none !important;
@@ -54,4 +66,74 @@ body {
     color: #14992f;
     text-decoration: none !important;
     text-shadow: 0 0 3px #00ff33; 
+  }
+
+  /*BLUE TO ARS*/
+  .compra_venta {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 12px;
+    margin: 12px 1%;
+  }
+
+  .cotizacion {
+    box-shadow: rgb(49, 172, 111) 0px 2px 6px;
+    background-color: rgb(107, 48, 147);
+    background-image: none;
+    border-color: rgb(107, 48, 147);
+    line-height: 125%;
+    margin: 7px;
+    border-radius: 7px 7px 7px 7px;
+    
+  }
+
+  .precio {
+    font-size: 3rem;
+    font-weight: bold;
+    white-space: pre;
+    color: rgb(49, 172, 111);
+    text-shadow: rgb(120, 248, 184) -1px 2px 1px;
+  }
+
+  .compra_venta_converse {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 12px;
+    margin: 12px 1%;
+  }
+
+  .dolar-blue-peso {
+    width: 5%;
+    background-color: none; 
+    padding: 1%; 
+    border: none; 
+    border-radius: 3px; 
+  }
+
+  .tituloConversor {
+    color: rgb(38, 136, 87);
+    text-shadow: rgb(120, 248, 184) -1px 2px 1px;
+  }
+  .subtituloConversor {
+    font-size: 1.3em;
+    color: rgb(38, 92, 136);
+    text-shadow: rgb(120, 201, 248) -1px 2px 1px;
+    white-space: pre;
+    font-weight: bold;
+  }
+
+  .tituloCardTHC {
+    font-size: 1.2em;
+
+  }
+
+  .arrowTHC {
+    color:rgb(38, 136, 87);
+  }
+
+  .convertirInput {
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 3px;
+    width: 25em;
   }
