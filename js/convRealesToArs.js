@@ -2,8 +2,8 @@
 /* BLUE -> ARS */
 let cotizacionRealC = 37.04;
 let cotizacionRealV = 37.05;
-document.getElementById("precioCompraReal").innerHTML = 'R$' + cotizacionRealC.toFixed(2);
-document.getElementById("precioVentaReal").innerHTML = 'R$' + cotizacionRealV.toFixed(2);
+document.getElementById("precioCompraReal").innerHTML = '$' + cotizacionRealC.toFixed(2);
+document.getElementById("precioVentaReal").innerHTML = '$' + cotizacionRealV.toFixed(2);
 
 function calcularRealToArs() {
     let inputReal = $("#inputReal").val();

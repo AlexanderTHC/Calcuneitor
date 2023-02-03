@@ -57,6 +57,7 @@
                                         Steam</a>
                                 </li>
                                 <li><a class="dropdown-item" href="/dolarToArs.html">Calculadora Dolar a Peso Argentino</a></li>
+                                <li>
                                 <li><a class="dropdown-item" href="/realesToArs.html">Calculadora
                                         Reales a
                                         Peso Argentino</a></li>
@@ -82,15 +83,15 @@
     <div class="contenidoPage">
         <div class="container">
             <div class="row pt-5 pb-5">
-                <h1>Calculadora de Reales a Peso Argentino</h1>
-                <h3>Reales <b class="text-primary">(R$)</b> a Peso Argentino <b class="text-success">(AR$)</b></h3>
+                <h1>Calculadora de Dolar a Peso Argentino</h1>
+                <h3>Dolar <b class="text-primary">(U$D)</b> a Peso Argentino <b class="text-success">(AR$)</b></h3>
                 <hr class="mt-3">
                 <div class="compra_venta">
                     <div class="cotizacion">
                         <div class="card text-center ">
                             <div class="card-body">
                                 <h5 class="card-title">COMPRA</h5>
-                                <h6 class="precio" id="precioCompraReal">$0.00</h6>
+                                <h6 class="precio" id="precioCompraDolar">$0.00</h6>
                             </div>
                         </div>
                     </div>
@@ -98,7 +99,7 @@
                         <div class="card text-center ">
                             <div class="card-body">
                                 <h5 class="card-title">VENTA</h5>
-                                <h6 class="precio" id="precioVentaReal">$0.00</h6>
+                                <h6 class="precio" id="precioVentaDolar">$0.00</h6>
                             </div>
                         </div>
                     </div>
@@ -113,13 +114,13 @@
                             <div class="compra_venta_converse">
                                 <div>
                                     <span class="subtituloConversor">Convertir a</span>
-                                    <h5 class="card-title tituloCardTHC">Reales (R$) <i
+                                    <h5 class="card-title tituloCardTHC">Dolar (U$D) <i
                                             class="fa-solid fa-arrow-right arrowTHC"></i> Peso Argentino (AR$)</h5>
                                     <div class="input-group">
-                                        <span class="input-group-text"><img src="img/brasilFlag.png" width="25"
-                                                height="25" alt="brasil"></span>
+                                        <span class="input-group-text"><img src="img/eeuu.png" width="25" height="25"
+                                                alt="eeuu"></span>
                                         <input type="number" class="form-control convertirInput" value="0" min="0"
-                                            id="inputReal" name="inputReal" onchange="calcularRealToArs()">
+                                            id="inputDolar" name="inputDolar" onchange="calcularDolarToArs()">
                                     </div>
                                     <div class="mt-3">
                                         <h5>Resultado:</h5>
@@ -129,16 +130,16 @@
                                 <div>
                                     <span class="subtituloConversor">Convertir a</span>
                                     <h5 class="card-title tituloCardTHC">Peso Argentino (AR$) <i
-                                            class="fa-solid fa-arrow-right arrowTHC"></i> Reales (R$)</h5>
+                                            class="fa-solid fa-arrow-right arrowTHC"></i> Dolar (U$D)</h5>
                                     <div class="input-group w-auto">
                                         <span class="input-group-text"><img src="img/argentinaFlag.png" width="25"
                                                 height="25" alt="argentina"></span>
                                         <input type="number" class="form-control convertirInput" value="0" min="0"
-                                            id="inputArs" name="InputArs" onchange="calcularArsToReal()">
+                                            id="inputArs" name="InputArs" onchange="calcularArsToDolar()">
                                     </div>
                                     <div class="mt-3">
                                         <h5>Resultado:</h5>
-                                        <p id="realTotal" name="realTotal">R$: $0.00</p>
+                                        <p id="dolarTotal" name="dolarTotal">U$D: $0.00</p>
                                     </div>
                                 </div>
                             </div>
@@ -219,7 +220,7 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
     <script src="js/calcuneitor.js" type="text/javascript" crossorigin="anonymous"></script>
-    <script src="js/convRealesToArs.js" type="text/javascript" crossorigin="anonymous"></script>
+    <script src="js/convDolarToArs.js" type="text/javascript" crossorigin="anonymous"></script>
 </body>
 
 </html>
